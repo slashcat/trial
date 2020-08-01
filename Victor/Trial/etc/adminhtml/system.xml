@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+   <system>
+      <tab id="trial" translate="label" sortOrder="10">
+         <label>TRIAL</label>
+      </tab>
+      <section id="victor_trial_settings_api_details" translate="label" sortOrder="250" showInDefault="1" showInWebsite="1" showInStore="1">
+         <class>separator-top</class>
+         <label>API Details</label>
+         <tab>trial</tab>
+         <resource>Victor_Trial::victortrial_config</resource>
+         <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>API Details</label>
+            <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+               <label>Module Enable</label>
+               <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+            </field>
+            <field id="url" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+               <label>URL</label>
+            </field>
+            <field id="key" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="0" showInStore="0">
+               <label>API Key</label>
+            </field>
+         </group>
+      </section>
+      <section id="victor_trial_settings_sync" translate="label" sortOrder="250" showInDefault="1" showInWebsite="1" showInStore="1">
+         <class>separator-top</class>
+         <label>Sync data</label>
+         <tab>trial</tab>
+         <resource>Victor_Trial::victortrial_config</resource>
+         <group id="generals" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="0" showInStore="0">
+            <label>Cron</label>
+            <field id="Victor_trial_settings_cron_action" translate="label" type="select" sortOrder="1" showInDefault="1" showInWebsite="1" showInStore="1">
+               <label>Cron task</label>
+               <source_model>Victor\Trial\Model\Config\Source\ListMode</source_model>
+            </field>
+         </group>
+      </section>
+   </system>
+</config>

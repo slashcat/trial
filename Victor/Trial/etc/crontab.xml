@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+	<group id="default">
+		<job instance="Victor\Trial\Cron\Run" method="execute" name="victor_trial_settings_cron">
+			<config_path>victor_trial_settings_sync/generals/Victor_trial_settings_cron_action</config_path>
+		</job>
+	</group>
+</config>
