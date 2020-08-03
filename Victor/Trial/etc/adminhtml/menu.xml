@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
     <menu>
         <add id="Victor_Trial::products" title="Trial" module="Victor_Trial" sortOrder="51" resource="Victor_Trial::products"/>
-        <add id="Victor_Trial::post" title="Products" module="Victor_Trial" sortOrder="10" action="mageplaza_helloworld/post" resource="Victor_Trial::post" parent="Victor_Trial::products"/>
+        <add id="Victor_Trial::post" title="Products" module="Victor_Trial" sortOrder="10" action="victor_trial/post" resource="Victor_Trial::post" parent="Victor_Trial::products"/>
         <add id="Victor_Trial::hello_configuration" title="Configuration" module="Victor_Trial" sortOrder="99" parent="Victor_Trial::products" action="adminhtml/system_config/edit/section/victor_trial_settings_api_details/" resource="Victor_Trial::helloworld_configuration"/>
     </menu>
 </config>
