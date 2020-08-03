@@ -20,7 +20,7 @@
                 "app/code/",
                 "generated/code/"
             ]
-        }, 
+        } 
     },
     "version": "1.0.0",
     "minimum-stability": "stable",
